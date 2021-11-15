@@ -1,0 +1,268 @@
+<html> 
+
+  <head> 
+
+    <title></title> 
+
+    <script 
+
+      crossorigin 
+
+      src="https://unpkg.com/react@16/umd/react.development.js" 
+
+    ></script> 
+
+    <script 
+
+      crossorigin 
+
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" 
+
+    ></script> 
+
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script> 
+
+  </head> 
+<body>
+    <style>
+        div#tit{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;color: rgb(255, 255, 255);text-shadow:rgb(255, 255, 255); font-size: xx-large;text-align: center;
+    grid-area: header;
+  background-color: #000000;
+ }
+/*
+  div#c1{
+    background-color: grey; ;width: 300px;height:300px;border-radius:20px;background-size: cover;
+  }
+*/
+  div#giff{
+    position: relative;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  }
+  .image{
+    position: relative;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  
+  }
+
+  body{
+    background-color: rgba(39, 39, 39, 0.945);
+
+  }
+
+  a{size: 300px; font-size: x-large;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;text-shadow: grey;color: rgb(43, 41, 41);text-overflow: ellipsis;}
+            a:hover{ color: black;}
+            a:visited{color: rgb(219, 211, 211);}
+
+            .card {
+  border: 0.3rem #dfd9d9 solid;
+  background-color: #a89e9e;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  height: 130px;
+  width: 320px;
+  position: relative;
+  
+}
+
+.card-body {
+  padding: 1rem;
+}
+.card-body > * {
+  margin-bottom: 0.5rem;
+  
+}
+
+
+</style>
+
+    
+    <div id = "tit">
+
+    </div>
+
+    <div id ="giff">
+
+    </div>
+
+    <div id="c1">
+
+    </div>
+
+
+
+
+    <script type = "text/babel">
+        var heading = document.querySelector("#tit");
+        class Heading extends React.Component{
+            render(){
+                return <h1>{this.props.children}</h1>
+            }
+        }
+    
+        ReactDOM.render(
+            <div className = "head1">
+                <Heading>Top Charts</Heading>
+                </div>,
+                document.querySelector("#tit")
+        );
+        
+        ReactDOM.render(
+    <div className = "giffy">
+      <img  class ="image" src ="Animated Sound Wave.gif" ></img>
+      
+    </div>,
+    document.querySelector("#giff")
+        );
+        
+
+
+
+        ReactDOM.render(
+        <div id ="c1">
+          <div className="grid-container">
+            <div class="row center">
+        
+          <div className = "card" display = "inline" postion ="relative">
+            
+          
+              
+              <div class="card-body" display ="inline">
+                
+                <h4>1) Stay- Justin Bieber and Kid laroi </h4>
+                <audio controls src ="The_Kid_Laroi_STAY.mp3"></audio>
+              
+                </div>
+                </div>
+
+                <div className = "card" display = "inline" postion ="relative">
+            
+          
+              
+            <div class="card-body" display ="inline">
+              
+              <h4>2) Numb- Linkin Park </h4>
+              <audio controls src ="Numb_Official_Music_Video_Linkin_Park.mp3"></audio>
+            
+              </div>
+              </div>
+
+                <div className = "card" display = "inline" postion ="relative">
+            
+          
+              
+            <div class="card-body" display ="inline">
+              
+              <h4>3) Famous Last Words- My Chemical Romance </h4>
+              <audio controls src ="My_Chemical_Romance_Famous_Last_Words.mp3"></audio>
+            
+              </div>
+              </div>
+
+                <div className = "card" display = "inline" postion ="relative">
+            
+          
+              
+            <div class="card-body" display ="inline">
+              
+              <h4>4) Someone You Loved- Lewis Capaldi </h4>
+              <audio controls src ="Lewis_Capaldi_Someone_You_Loved.mp3"></audio>
+            
+              </div>
+              </div>
+
+                <div className = "card" display = "inline" postion ="relative">
+            
+          
+              
+            <div class="card-body" display ="inline">
+              
+              <h4>5) Blinding Lights- The Weeknd </h4>
+              <audio controls src ="The_Weeknd_Blinding_Lights_Official_Audio_.mp3"></audio>
+            
+              </div>
+              </div>
+
+                <div className = "card" display = "inline" postion ="relative">
+            
+          
+              
+            <div class="card-body" display ="inline">
+              
+              <h4>6) Heat Waves- Glass Animals </h4>
+              <audio controls src ="Glass_Animals_Heat_Waves.mp3"></audio>
+            
+              </div>
+              </div>
+
+                <div className = "card" display = "inline" postion ="relative">
+            
+          
+              
+            <div class="card-body" display ="inline">
+              
+              <h4>7) Bad Habits- Ed Sheeran </h4>
+              <audio controls src ="Ed_Sheeran_Bad_Habits.mp3"></audio>
+            
+              </div>
+              </div>
+
+                <div className = "card" display = "inline" postion ="relative">
+            
+          
+              
+            <div class="card-body" display ="inline">
+              
+              <h4>8) Boulevard Of Broken Dreams- Green Day </h4>
+              <audio controls src ="Green_Day_Boulevard_Of_Broken_Dreams.mp3"></audio>
+            
+              </div>
+              </div>
+
+                <div className = "card" display = "inline" postion ="relative">
+            
+          
+              
+            <div class="card-body" display ="inline">
+              
+              <h4>9) Sweet Child O' Mine- Guns N Roses </h4>
+              <audio controls src ="Guns_N_Roses_Sweet_Child_O_Mine_Official_Musi.mp3"></audio>
+            
+              </div>
+              </div>
+
+                <div className = "card" display = "inline" postion ="relative">
+            
+          
+              
+            <div class="card-body" display ="inline">
+              
+              <h4>10) Escape Plan- Travis Scott </h4>
+              <audio controls src ="Travis_Scott_Escape_Plan.mp3"></audio>
+            
+              </div>
+              </div>
+                </div>
+                </div>
+
+                </div>,
+              
+            
+            document.querySelector("#c1")
+
+      );
+        
+
+        </script>
+
+
+</body>
+</html>
